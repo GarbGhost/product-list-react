@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 50px;
+  color: antiquewhite;
+  font-family: "Roboto", system-ui;
+  background-image: url("./assets/milky-way.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
