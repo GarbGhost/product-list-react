@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 50px;
+  font-family: "Roboto", system-ui;
+  margin: 0;
+  min-height: 100dvh;
+  background: linear-gradient(90deg, #252525 0%, #3a3a3a 30%, #545454 70%, #252525 100%);
+  background-size: 300% 100%;
+  animation: slowPan 30s ease-in-out infinite;
+}
+

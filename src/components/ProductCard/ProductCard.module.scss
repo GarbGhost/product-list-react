@@ -1,0 +1,122 @@
+.productCard {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px;
+	background:#545454;
+	width: 100%;
+	max-width: 210px;
+	gap: 10px;
+	border-radius: 15px;
+	// box-shadow: 4px 1px 42px 15px rgba(34, 60, 80, 1);
+  box-shadow: 0px 0px 12px 14px rgba(32, 31, 31, 0.9);
+	
+
+	
+}
+
+
+
+.imageWrapper {
+	width: 100%;
+	height: 200px;
+	aspect-ratio: 1 / 1;
+	border-radius: 15px;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 11px 14px 11px -5px rgba(34, 60, 80, 0.5);
+}
+.image {
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+	transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.08); // лёгкий зум при наведении
+    }
+}
+
+
+
+.price {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	gap: 10px;
+}
+
+.price span:first-child {
+	color: green;
+	font-weight: 800;
+}
+.price del:last-child {
+	color: rgb(41, 41, 43);
+}
+
+.price span::after {
+	content: '\20BD';
+	color: green;
+}
+.price del::after {
+	content: '\20BD';
+	color: rgb(41, 41, 43);
+}
+
+.descriptionWrapper {
+	display: flex;
+}
+.description {
+	margin: 0;
+	padding: 0;
+	color: black;
+	 font-size: 14px;
+	 font-weight: 400;
+  line-height: 1.3;
+  word-wrap:break-word;
+
+  
+}
+
+
+
+/* From Uiverse.io by WhiteNervosa */ 
+.buttonDeleteCard {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.buttonDeleteCard:focus,
+.buttonDeleteCard:hover {
+  color: #fff;
+}
+
+.buttonDeleteCard:focus:after,
+.buttonDeleteCard:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.buttonDeleteCard:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+

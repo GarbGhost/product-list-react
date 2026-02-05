@@ -1,0 +1,166 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-bottom: 50px;
+	color: black;
+
+	border-radius: 0.8rem;
+	background: #23272f;
+	box-shadow:
+		inset 5px 5px 10px #0e1013,
+		inset -5px -5px 10px #383e4b,
+		0px 0px 100px rgba(255, 212, 59, 0),
+		0px 0px 100px rgba(255, 102, 0, 0);
+	// width: 100%;
+	flex-basis: 100%;
+	padding: 1rem;
+	border: none;
+	border: 1px solid transparent;
+	color: #f4f5f7;
+	transition: all 0.2s ease-in-out;
+
+}
+
+.formInputImageContainer {
+	display: flex;
+	border-radius: 1rem;
+	background: linear-gradient(173deg, #23272f 0%, #14161a 100%);
+	box-shadow:
+		10px 10px 20px #0e1013,
+		-10px -10px 40px #383e4b;
+	padding: 0.5rem;
+	gap: 0.3rem;
+}
+.formInputImage {
+	border-radius: 0.8rem;
+	background: #23272f;
+	box-shadow:
+		inset 5px 5px 10px #0e1013,
+		inset -5px -5px 10px #383e4b,
+		0px 0px 100px rgba(255, 212, 59, 0),
+		0px 0px 100px rgba(255, 102, 0, 0);
+	width: 100%;
+	flex-basis: 100%;
+	padding: 1rem;
+	border: none;
+	border: 1px solid transparent;
+	color: #f4f5f7;
+	transition: all 0.2s ease-in-out;
+}
+
+
+.formInputImage {
+  &::placeholder {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:hover {
+    border: 1px solid #ffd43b;
+    outline: none;
+    box-shadow:
+      inset 0px 0px 10px rgba(255, 102, 0, 0.5),
+      inset 0px 0px 10px rgba(255, 212, 59, 0.5),
+      0px 0px 100px rgba(255, 212, 59, 0.5),
+      0px 0px 100px rgba(255, 102, 0, 0.5);
+		transition: border .4s ease-in-out;
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+.formInputImage::file-selector-button {
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	color: #f4f5f7;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.formInputImage::file-selector-button:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 0px 15px 9px rgba(7, 7, 7, 0.39);
+}
+.formInputImage::file-selector-button:active {
+	transform: scale(0.95);
+}
+
+.textareaContainer {
+	position: relative;
+
+	textarea {
+		resize: none;
+	}
+}
+
+.symbol {
+	position: absolute;
+	right: 12px;
+	bottom: 8px;
+	font-size: 12px;
+	color: #9aa0a6;
+}
+
+.formButtonAddCard {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 25px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow:
+		0 4px 6px rgb(65 132 144 / 10%),
+		0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+.formButtonAddCard:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.formButtonAddCard:hover {
+	transition: all 0.2s;
+	box-shadow:
+		0 7px 14px rgb(65 132 144 / 10%),
+		0 3px 6px rgb(0 0 0 / 8%);
+}
+.formButtonAddCard:active {
+	background-color: #808080;
+}
+.formButtonAddCard:disabled {
+	background-color: #eee;
+	border-color: #eee;
+	color: #444;
+	cursor: not-allowed;
+}
+
+.errors {
+	padding: 5px 11px;
+	border-radius: 10px;
+	background-color: #4b1818;
+	color: floralwhite;
+}
